@@ -9,8 +9,6 @@ public class MyinternshipApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyinternshipApplication.class, args);
-		DatatypesTask dt = new DatatypesTask();
-		dt.startTask();
 	}
 
 }
