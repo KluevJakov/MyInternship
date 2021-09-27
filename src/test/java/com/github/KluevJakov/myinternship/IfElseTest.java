@@ -6,23 +6,46 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class IfElseTest {
+    private static final String pos = "Weird";
+    private static final String neg = "Not Weird";
+
     @Test
     public void oddCheck() {
-        assertEquals("Weird", IfElseTask.solveTask(3));
+        assertEquals(pos, IfElseTask.solveTask(3));
     }
 
     @Test
     public void firstIfCheck() {
-        assertEquals("Not Weird", IfElseTask.solveTask(4));
+        assertEquals(neg, IfElseTask.solveTask(4));
     }
 
     @Test
     public void secondIfCheck() {
-        assertEquals("Weird", IfElseTask.solveTask(8));
+        assertEquals(pos, IfElseTask.solveTask(8));
     }
 
     @Test
     public void elseCheck() {
-        assertEquals("Not Weird", IfElseTask.solveTask(22));
+        assertEquals(neg, IfElseTask.solveTask(22));
+    }
+
+    @Test
+    public void firstLeftCheck() {
+        assertEquals(neg, IfElseTask.solveTask(2));
+    }
+
+    @Test
+    public void firstRightCheck() {
+        assertEquals(pos, IfElseTask.solveTask(5));
+    }
+
+    @Test
+    public void secondLeftCheck() {
+        assertEquals(pos, IfElseTask.solveTask(6));
+    }
+
+    @Test
+    public void secondRightCheck() {
+        assertEquals(pos, IfElseTask.solveTask(20));
     }
 }
