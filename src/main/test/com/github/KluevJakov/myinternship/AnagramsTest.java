@@ -1,6 +1,6 @@
 package com.github.KluevJakov.myinternship;
 
-import com.github.KluevJakov.myinternship.AnagramsTask;
+import com.github.KluevJakov.myinternship.tasks.AnagramsTask;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package com.github.KluevJakov.myinternship;
+package com.github.KluevJakov.myinternship.tasks;
 
 import java.util.HashMap;
 import java.util.List;
